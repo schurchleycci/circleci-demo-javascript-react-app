@@ -17,6 +17,9 @@ jobs:
       - run:
           command: yarn build
           name: Build app
+      - run:
+          command: npx renovate --platform=local
+          name: Run renovate
       - persist_to_workspace:
           root: ~/project
           paths:
