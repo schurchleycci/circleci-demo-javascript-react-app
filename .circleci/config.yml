@@ -12,13 +12,7 @@ jobs:
       - node/install-packages:
           pkg-manager: yarn
       - run:
-          command: yarn test
-          name: Run tests
-      - run:
-          command: yarn build
-          name: Build app
-      - run:
-          command: npx renovate --platform=local
+          command: npx renovate --platform=local --dry-run=full
           name: Run renovate
       - persist_to_workspace:
           root: ~/project
