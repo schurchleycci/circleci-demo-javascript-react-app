@@ -15,7 +15,7 @@ jobs:
           command: npx renovate --platform=local --dry-run=full
           name: Run renovate
       - persist_to_workspace:
-          root: ~/project
+          root: ~/projec
           paths:
             - .
   deploy: # this can be any name you choose
