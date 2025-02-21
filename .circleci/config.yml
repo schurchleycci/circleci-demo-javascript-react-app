@@ -3,7 +3,7 @@ orbs:
   node: circleci/node@5.1.0
   heroku: circleci/heroku@1.2.6
 
-jobs:
+job
   build_and_test:
     docker:
       - image: cimg/node:18.15.0
